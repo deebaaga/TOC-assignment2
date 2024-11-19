@@ -1,0 +1,272 @@
+:root {
+  --dark-purple: #0a014f; /* Rich dark background */
+  --soft-purple: #cd9fcc; /* Subtle secondary background or cards */
+  --light-pink: #e4c2c6; /* Neutral background or section highlights */
+  --soft-pink: #f6caca; /* Button or accents */
+  --pastel-pink: #fae8eb; /* Lightest background or cards */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--soft-pink);
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Container for the form */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-purple);
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--dark-purple);
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+  background-color: var(--dark-purple);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--soft-purple);
+}
+
+/* Container for the form */
+.container {
+  background-color: var(--pastel-pink);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Title */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-purple);
+  margin-bottom: 20px;
+}
+
+/* Form Input Styles */
+form label {
+  font-size: 14px;
+  color: var(--dark-purple);
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid var(--soft-purple);
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--dark-purple);
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--soft-purple);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--dark-purple);
+}
+
+form button:active {
+  background-color: var(--light-pink);
+}
+
+/* Smooth transitions for form elements */
+form input,
+form textarea,
+form button {
+  transition: transform 0.3s ease;
+}
+
+form input:hover,
+form textarea:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+/* Basic Container Styling */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-purple);
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--dark-purple);
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+  background-color: var(--dark-purple);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--soft-purple);
+}
+
+/* Success Message Styling */
+.success-message {
+  background-color: #e4f9e4;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h3 {
+  text-align: center;
+  color: var(--dark-purple);
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: #333;
+}

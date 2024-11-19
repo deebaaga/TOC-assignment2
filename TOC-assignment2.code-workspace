@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "../TOC-assignment1"
+    },
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "TOC-assignment2"
+  }
+}
